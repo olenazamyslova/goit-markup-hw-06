@@ -751,7 +751,7 @@ address{
 .modal-form-message::placeholder {
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 0.08;
     letter-spacing: 0.01em;
     color: var(--placeholder);
 }
@@ -769,7 +769,7 @@ address{
     margin-bottom: 30px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--add-color-1);
 }
@@ -841,7 +841,7 @@ address{
     width: 100%;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--add-color-2);
@@ -869,7 +869,7 @@ address{
     align-items: center;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px; 
+    line-height: 1.88; 
     letter-spacing: 0.06em;
     color: var(--add-color-2);
     background-color: var(--accent-color);
@@ -884,7 +884,5 @@ address{
     margin-left: 8px;
 }
 .footer-icon{
-    left: 10px;
-    top: 0;
     fill: var(--add-color-2);
 }
