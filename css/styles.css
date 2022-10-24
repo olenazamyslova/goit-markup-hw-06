@@ -301,6 +301,7 @@ footer{
 }
 .footer_left{
     margin-right: 70px;
+    flex-grow: 1;
 }
 .f_logo{
     font-family: 'Raleway',
@@ -646,9 +647,8 @@ address{
 }
 .backdrop_modal_btn{
     position: absolute;
-    top: 0;
-    right: 0;
-    margin: 8px 8px 0 0;
+    top: 8px;
+    right: 8px;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -692,7 +692,9 @@ address{
 .modal-form-field {
     margin-bottom: 10px;
 }
-
+#last-child{
+    margin-bottom: 0;
+}
 .modal-form-input-desc {
     display: block;
     font-size: 12px;
@@ -735,6 +737,7 @@ address{
 }
 
 .modal-form-message {
+    display: block;
     width: 100%;
     height: 120px;
     resize: none;
@@ -760,13 +763,19 @@ address{
 
 .modal-form-checkbox-wrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--add-color-1);
 }
 
 .modal-form-own-checkbox {
-    border: 1px solid #555555;
+    border: 1px solid var(--main-color);
     border-radius: 2px;
     cursor: pointer;
     margin-right: 10px;
@@ -801,6 +810,7 @@ address{
     background-color: var(--accent-color);
     color: var(--add-color-2);
     border: none;
+    border-radius: 4px; 
     transition: box-shadow var(--transition-el);
 }
 .modal-form-submit:focus,
@@ -821,7 +831,7 @@ address{
 .footer_form{
    display: flex;
    flex-direction: column;
-   width: 100%;
+   width: 570px;
    
 }
 .footer-form-list{
@@ -855,6 +865,8 @@ address{
     border-color: var(--accent-color);
 }
 .footer-submit{
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px; 
@@ -862,16 +874,16 @@ address{
     color: var(--add-color-2);
     background-color: var(--accent-color);
     height: 50px;
-    padding: 10px 62px 10px 28px;
+    padding: 10px 28px;
     margin-left: 12px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.footer-submit-icon{
-    position: relative;
+    border-radius: 4px;
 }
 .footer-icon{
-    position: absolute;
+    margin-left: 8px;
+}
+.footer-icon{
     left: 10px;
     top: 0;
     fill: var(--add-color-2);
